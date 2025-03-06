@@ -47,7 +47,7 @@ namespace lab
         {
             Console.Write("Введите email-адрес: ");
             string email = Console.ReadLine();
-            string regex = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
+            string regex = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$";
             bool isMatch = Regex.IsMatch(email, regex);
             Console.WriteLine(isMatch ? "Email-адрес корректен." : "Email-адрес некорректен.");
         }
